@@ -13,15 +13,25 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-app.get("/", (req,res) => {
-  res.render("main-page")
+//getting the game data from the questions.json file
+const questionsData = require("./public/questions.json");
+
+const calculateScore = (choices) => 400 // DO THIS OALTER
+
+app.get("/", (req, res) => {
+  res.render("main-page");
+});
+
+app.get("/game", (req, res) => {
+  console.log(questionsData);
+  res.render("game/index.ejs", {questionsData});
+});
+
+app.get("/game/results", (req, res) => {
+  res.render("game/results.ejs")
 })
 
-app.get("/game", (req,res) => {
-  res.render("game/index.ejs")
-})
-
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`)
-})
+  console.log(`Listening on port ${PORT}`);
+});
