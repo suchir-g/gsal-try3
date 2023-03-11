@@ -12,9 +12,9 @@
             <h4><%-question.question%></h4>
             <% for( let i=0; i < question.options.length; i++ ) { %>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="question<%-question.id%>"
-                  id="question<%-question.id%>_<%-i%>">
-                <label class="form-check-label" for="question<%-question.id%>_<%-i%>">
+                <input class="form-check-input" type="radio" name="<%-question.id%>" id="q<%-question.id%>_<%-i%>"
+                  required value="<%-i%>">
+                <label class="form-check-label" for="q<%-question.id%>_<%-i%>">
                   <%-question.options[i]%>
                 </label>
               </div>

@@ -1,5 +1,11 @@
 <%- include("./partials/html-head.ejs") %>
-  <div class="container-fluid d-flex flex-row align-items-between justify-content-evenly p-5" style="height:100vh">
+  <style>
+    #main-content {
+      background-color: white
+    }
+  </style>
+  <div id="main-content" class="container-fluid d-flex flex-row align-items-between justify-content-evenly p-5"
+    style="height:100vh;">
     <div class="d-inline-block h-75 d-flex flex-column justify-content-evenly align-items-center w-75">
       <h1>Hello!</h1>
       <p class="text-center">
@@ -24,5 +30,6 @@
     <div class="d-none d-md-flex h-75 justify-content-center" style="width:fit-content">
       <img src="\images\front-page-img.png" alt="" class="h-100">
     </div>
+    
   </div>
   <%- include("./partials/html-foot.ejs") %>
