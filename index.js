@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 //getting the game data from the questions.json file
-const questionsData = require("./public/questions.json");
+const questionsData = require("./public/questions2.json");
 
 const calculateScore = (choices) => 400; // DO THIS OALTERsss
 const calculateText = (score) => {
@@ -35,6 +35,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/game", (req, res) => {
+  res.render("game/preview.ejs");
+});
+
+app.get("/game/play", (req, res) => {
   res.render("game/index.ejs", { questionsData });
 });
 

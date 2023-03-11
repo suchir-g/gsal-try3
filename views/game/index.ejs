@@ -1,30 +1,87 @@
 <%- include("../partials/html-head.ejs") %>
-  <div class="container-fluid d-flex justify-content-center align-items-center"
-    style="height:100vh; border:1px solid blue">
-    <div class="d-none d-lg-block col-2 h-100" style="border: 5px solid red">
-
+  <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh">
+    <div class="d-none d-lg-block col h-100">
+      <img src="\images\PNG\4.png" alt="" style="max-width: 110%;">
+      <img src="\images\PNG\9.png" alt="" style="max-width: 110%;">
     </div>
-    <div class="col-8 h-100" style="border: 5px solid red">
+    <div class="col-md-8 col-sm-12 h-100">
       <form action="/game/results">
-        <h3>HELLO GUYS PENGIUN</h3>
+        <h2 style="width: 100%; text-align: center;" class="m-3">CARBON SCORE CALCULATOR</h2>
         <% for(const question of questionsData.questions) { %>
-          <div class="card p-2 m-2">
+          <div class="card p-2 m-2 questionCard" id="qc<%-question.id%>">
             <h4><%-question.question%></h4>
             <% for( let i=0; i < question.options.length; i++ ) { %>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="<%-question.id%>" id="q<%-question.id%>_<%-i%>"
                   required value="<%-i%>">
                 <label class="form-check-label" for="q<%-question.id%>_<%-i%>">
-                  <%-question.options[i]%>
+                  <%-question.options[i].option%>
                 </label>
               </div>
               <% } %>
+
           </div>
+
           <% } %>
-            <button class="btn btn-primary btn-lg">Submit</button>
+            <button class="btn btn-primary m-2 w-25 align-self-end" id="move-on">Next</button>
+
+            <card id="final-submit-card">
+              <h3>You have finished the test.</h3>
+              <p>Click the button below to reveal your worked-out carbon score, ranging from 0 to 1000.</p>
+              <p>The higher the score, the better your carbon footprint is, with 1000 being the best possible score.</p>
+              <p>Remember, this is only a simple test and there are always ways to improve and critisize carbon usage -
+                you can always better the environment around by making simple changes.</p>
+              <p>Good luck!</p>
+              <i>Click below for results</i>
+              <button class="btn btn-success btn-lg d-block m-2" id="final-submit-button">Submit</button>
+            </card>
       </form>
     </div>
-    <div class="d-none d-lg-block col-2 h-100" style="border: 5px solid red">
+    <div class="d-none d-lg-block col h-100">
+      <img src="\images\PNG\3.png" alt="" style="max-width: 110%;">
+      <img src="\images\PNG\7.png" alt="" style="max-width: 110%;">
     </div>
   </div>
+  <script>
+    let currentQuestionIndex = 1
+    const updateElements = () => {
+      for (const questionCard of document.getElementsByClassName("questionCard")) {
+        if (parseInt(questionCard.id.slice(2)) != currentQuestionIndex) {
+          questionCard.style.display = "none"
+        }
+        if (parseInt(questionCard.id.slice(2)) == currentQuestionIndex) {
+          questionCard.style.display = "flex"
+        }
+      }
+      const submitButton = document.querySelector("#final-submit-card")
+      const nextButton = document.querySelector("#move-on")
+      if (currentQuestionIndex <= 25) {
+        nextButton.style.display = "block"
+        submitButton.style.display = "none"
+
+      } else {
+        nextButton.style.display = "none"
+        submitButton.style.display = "block"
+      }
+    }
+    updateElements()
+    document.getElementById("move-on").addEventListener("click", function (event) {
+      event.preventDefault()
+      const radioButtons = document.querySelectorAll(`input[name="${currentQuestionIndex}"]`);
+      let valid = false
+      for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+          valid = true
+        }
+      }
+      if (valid) {
+        currentQuestionIndex += 1
+        updateElements()
+      }
+    });
+
+
+
+
+  </script>
   <%- include("../partials/html-foot.ejs") %>
