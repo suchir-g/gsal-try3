@@ -136,519 +136,519 @@
       "options": [
         {
           "option": "Rarely or never",
-"value": -2
-},
-{
-"option": "Once a year or less",
-"value": -1
-},
-{
-"option": "A few times a year",
-"value": 0
-},
-{
-"option": "Once a month or more",
-"value": 1
-},
-{
-"option": "Several times a month or more",
-"value": 2
-}
-]
-},
-{
-    "id": 7,
-    "question": "How often do you recycle?",
-    "options": [
-        {
-            "option": "I recycle everything that can be recycled",
-            "value": -2
+          "value": -2
         },
         {
-            "option": "I recycle most of the time, but sometimes I forget",
-            "value": -1
+          "option": "Once a year or less",
+          "value": -1
         },
         {
-            "option": "I recycle sometimes, but could do better",
-            "value": 0
+          "option": "A few times a year",
+          "value": 0
         },
         {
-            "option": "I rarely recycle, but I am willing to learn more",
-            "value": 1
+          "option": "Once a month or more",
+          "value": 1
         },
         {
-            "option": "I never recycle, but I am willing to start",
-            "value": 2
+          "option": "Several times a month or more",
+          "value": 2
         }
-    ]
-},
-{
-    "id": 8,
-    "question": "How often do you eat food that was grown locally?",
-    "options": [
-        {
-            "option": "I eat only locally sourced food",
-            "value": -2
-        },
-        {
-            "option": "I eat locally sourced food most of the time, but sometimes buy imported products",
-            "value": -1
-        },
-        {
-            "option": "I eat a mix of locally sourced and imported food",
-            "value": 0
-        },
-        {
-            "option": "I rarely eat locally sourced food, but I am willing to make changes",
-            "value": 1
-        },
-        {
-            "option": "I never eat locally sourced food, but I am willing to start",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 9,
-    "question": "Do you use energy-efficient light bulbs at home?",
-    "options": [
-        {
-            "option": "I have replaced all of my light bulbs with energy-efficient ones",
-            "value": -2
-        },
-        {
-            "option": "I use energy-efficient light bulbs for most of my lights, but not all",
-            "value": -1
-        },
-        {
-            "option": "I use a mix of energy-efficient and traditional light bulbs",
-            "value": 0
-        },
-        {
-            "option": "I rarely use energy-efficient light bulbs, but I am willing to make changes",
-            "value": 1
-        },
-        {
-            "option": "I never use energy-efficient light bulbs, but I am willing to start",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 10,
-    "question": "Do you use reusable bags when shopping?",
-    "options": [
-        {
-            "option": "I always bring my own reusable bags when shopping",
-            "value": -2
-        },
-        {
-            "option": "I mostly use reusable bags, but sometimes forget or use plastic bags",
-            "value": -1
-        },
-        {
-            "option": "I use both reusable and plastic bags equally",
-            "value": 0
-        },
-        {
-            "option": "I rarely use reusable bags, but I am willing to make changes",
-            "value": 1
-        },
-        {
-            "option": "I never use reusable bags, but I am willing to start",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 11,
-    "question": "How often do you buy organic produce?",
-    "options": [
-        {
-            "option": "I always buy organic produce",
-            "value": -2
-        },
-        {
-            "option": "I mostly buy organic produce, but sometimes buy conventionally-grown produce",
-            "value": -1
-        },
-        {
-            "option": "I buy a mix of organic and conventionally-grown produce",
-            "value": 0
-        },
-        {
-            "option": "I rarely buy organic produce, but I am willing to make changes",
-            "value": 1
-        },
-        {
-            "option": "I never buy organic produce, but I am willing to start",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 12,
-    "question": "Do you leave electronics plugged in when not in use?",
-    "options": [
-        {
-            "option": "Never",
-            "value": -2
-        },
-        {
-            "option": "Rarely",
-            "value": -1
-        },
-        {
-            "option": "Sometimes",
-            "value": 0
-        },
-        {
-            "option": "Most of the time",
-            "value": 1
-        },
-        {
-            "option": "Always",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 13,
-    "question": "Do you use public transportation, walk, or bike instead of driving alone?",
-    "options": [
-        {
-            "option": "Always",
-            "value": -2
-        },
-        {
-            "option": "Most of the time",
-            "value": -1
-        },
-        {
-            "option": "Sometimes",
-            "value": 0
-        },
-        {
-            "option": "Rarely",
-            "value": 1
-        },
-        {
-            "option": "Never",
-            "value": 2
-        }
-    ]
-},
-{
-"id": 14,
-"question": "How often do you take baths?",
-"options": [
-{
-"option": "Never",
-"value": -2
-},
-{
-"option": "Rarely",
-"value": -1
-},
-{
-"option": "Sometimes",
-"value": 0
-},
-{
-"option": "Most of the time",
-"value": 1
-},
-{
-"option": "Always",
-"value": 2
-}
-]
-},
-{
-    "id": 15,
-    "question": "Do you compost food waste at home?",
-    "options": [
-        {
-            "option": "Always",
-            "value": -2
-        },
-        {
-            "option": "Most of the time",
-            "value": -1
-        },
-        {
-            "option": "Sometimes",
-            "value": 0
-        },
-        {
-            "option": "Rarely",
-            "value": 1
-        },
-        {
-            "option": "Never",
-            "value": 2
-        }
-    ]
-},
-{
-    "id": 16,
-    "question": "On average, how many minutes do you spend taking a shower?",
-    "options": [
-        {
-            "option": "Less than 5 minutes",
-            "value": -2
-        },
-        {
-            "option": "5-10 minutes",
-            "value": -1
-        },
-        {
-            "option": "10-15 minutes",
-            "value": 0
-        },
-        {
-            "option": "15-20 minutes",
-            "value": 1
-        },
-        {
-            "option": "More than 20 minutes",
-            "value": 2
-        }
-    ]
-},
-{
-"id": 17,
-"question": "Do you use a clothesline or drying rack instead of a clothes dryer?",
-"options": [
-{
-"option": "Exclusively use clothesline or drying rack",
-"value": -2
-},
-{
-"option": "Mostly use clothesline or drying rack",
-"value": -1
-},
-{
-"option": "Use both equally",
-"value": 0
-},
-{
-"option": "Mostly use clothes dryer",
-"value": 1
-},
-{
-"option": "Exclusively use clothes dryer",
-"value": 2
-}
-]
-},
-{
-"id": 18,
-"question": "How often do you use disposable products such as paper plates, plastic cutlery, or single-use cups?",
-"options": [
-{
-"option": "Never",
-"value": -2
-},
-{
-"option": "Rarely (less than once a week)",
-"value": -1
-},
-{
-"option": "Sometimes (1-2 times a week)",
-"value": 0
-},
-{
-"option": "Often (3-4 times a week)",
-"value": 1
-},
-{
-"option": "Always (more than 4 times a week)",
-"value": 2
-}
-]
-},
-{
-"id": 19,
-"question": "How often do you buy locally produced goods?",
-"options": [
-{
-"option": "I only buy locally produced goods",
-"value": -2
-},
-{
-"option": "I mostly buy locally produced goods",
-"value": -1
-},
-{
-"option": "I sometimes buy locally produced goods",
-"value": 0
-},
-{
-"option": "I rarely buy locally produced goods",
-"value": 1
-},
-{
-"option": "I never buy locally produced goods",
-"value": 2
-}
-]
-},
-{
-  "id": 20,
-  "question": "How often do you buy products in bulk to reduce packaging waste?",
-  "options": [
-    {
-      "option": "Always",
-      "value": -2
+      ]
     },
     {
-      "option": "Most of the time",
-      "value": -1
+      "id": 7,
+      "question": "How often do you recycle?",
+      "options": [
+        {
+          "option": "I recycle everything that can be recycled",
+          "value": -2
+        },
+        {
+          "option": "I recycle most of the time, but sometimes I forget",
+          "value": -1
+        },
+        {
+          "option": "I recycle sometimes, but could do better",
+          "value": 0
+        },
+        {
+          "option": "I rarely recycle, but I am willing to learn more",
+          "value": 1
+        },
+        {
+          "option": "I never recycle, but I am willing to start",
+          "value": 2
+        }
+      ]
     },
     {
-      "option": "Sometimes",
-      "value": 0
+      "id": 8,
+      "question": "How often do you eat food that was grown locally?",
+      "options": [
+        {
+          "option": "I eat only locally sourced food",
+          "value": -2
+        },
+        {
+          "option": "I eat locally sourced food most of the time, but sometimes buy imported products",
+          "value": -1
+        },
+        {
+          "option": "I eat a mix of locally sourced and imported food",
+          "value": 0
+        },
+        {
+          "option": "I rarely eat locally sourced food, but I am willing to make changes",
+          "value": 1
+        },
+        {
+          "option": "I never eat locally sourced food, but I am willing to start",
+          "value": 2
+        }
+      ]
     },
     {
-      "option": "Rarely",
-      "value": 1
+      "id": 9,
+      "question": "Do you use energy-efficient light bulbs at home?",
+      "options": [
+        {
+          "option": "I have replaced all of my light bulbs with energy-efficient ones",
+          "value": -2
+        },
+        {
+          "option": "I use energy-efficient light bulbs for most of my lights, but not all",
+          "value": -1
+        },
+        {
+          "option": "I use a mix of energy-efficient and traditional light bulbs",
+          "value": 0
+        },
+        {
+          "option": "I rarely use energy-efficient light bulbs, but I am willing to make changes",
+          "value": 1
+        },
+        {
+          "option": "I never use energy-efficient light bulbs, but I am willing to start",
+          "value": 2
+        }
+      ]
     },
     {
-      "option": "Never",
-      "value": 2
+      "id": 10,
+      "question": "Do you use reusable bags when shopping?",
+      "options": [
+        {
+          "option": "I always bring my own reusable bags when shopping",
+          "value": -2
+        },
+        {
+          "option": "I mostly use reusable bags, but sometimes forget or use plastic bags",
+          "value": -1
+        },
+        {
+          "option": "I use both reusable and plastic bags equally",
+          "value": 0
+        },
+        {
+          "option": "I rarely use reusable bags, but I am willing to make changes",
+          "value": 1
+        },
+        {
+          "option": "I never use reusable bags, but I am willing to start",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "How often do you buy organic produce?",
+      "options": [
+        {
+          "option": "I always buy organic produce",
+          "value": -2
+        },
+        {
+          "option": "I mostly buy organic produce, but sometimes buy conventionally-grown produce",
+          "value": -1
+        },
+        {
+          "option": "I buy a mix of organic and conventionally-grown produce",
+          "value": 0
+        },
+        {
+          "option": "I rarely buy organic produce, but I am willing to make changes",
+          "value": 1
+        },
+        {
+          "option": "I never buy organic produce, but I am willing to start",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Do you leave electronics plugged in when not in use?",
+      "options": [
+        {
+          "option": "Never",
+          "value": -2
+        },
+        {
+          "option": "Rarely",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Most of the time",
+          "value": 1
+        },
+        {
+          "option": "Always",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Do you use public transportation, walk, or bike instead of driving alone?",
+      "options": [
+        {
+          "option": "Always",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "How often do you take baths?",
+      "options": [
+        {
+          "option": "Never",
+          "value": -2
+        },
+        {
+          "option": "Rarely",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Most of the time",
+          "value": 1
+        },
+        {
+          "option": "Always",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Do you compost food waste at home?",
+      "options": [
+        {
+          "option": "Always",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "On average, how many minutes do you spend taking a shower?",
+      "options": [
+        {
+          "option": "Less than 5 minutes",
+          "value": -2
+        },
+        {
+          "option": "5-10 minutes",
+          "value": -1
+        },
+        {
+          "option": "10-15 minutes",
+          "value": 0
+        },
+        {
+          "option": "15-20 minutes",
+          "value": 1
+        },
+        {
+          "option": "More than 20 minutes",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Do you use a clothesline or drying rack instead of a clothes dryer?",
+      "options": [
+        {
+          "option": "Exclusively use clothesline or drying rack",
+          "value": -2
+        },
+        {
+          "option": "Mostly use clothesline or drying rack",
+          "value": -1
+        },
+        {
+          "option": "Use both equally",
+          "value": 0
+        },
+        {
+          "option": "Mostly use clothes dryer",
+          "value": 1
+        },
+        {
+          "option": "Exclusively use clothes dryer",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "How often do you use disposable products such as paper plates, plastic cutlery, or single-use cups?",
+      "options": [
+        {
+          "option": "Never",
+          "value": -2
+        },
+        {
+          "option": "Rarely (less than once a week)",
+          "value": -1
+        },
+        {
+          "option": "Sometimes (1-2 times a week)",
+          "value": 0
+        },
+        {
+          "option": "Often (3-4 times a week)",
+          "value": 1
+        },
+        {
+          "option": "Always (more than 4 times a week)",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "How often do you buy locally produced goods?",
+      "options": [
+        {
+          "option": "I only buy locally produced goods",
+          "value": -2
+        },
+        {
+          "option": "I mostly buy locally produced goods",
+          "value": -1
+        },
+        {
+          "option": "I sometimes buy locally produced goods",
+          "value": 0
+        },
+        {
+          "option": "I rarely buy locally produced goods",
+          "value": 1
+        },
+        {
+          "option": "I never buy locally produced goods",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "How often do you buy products in bulk to reduce packaging waste?",
+      "options": [
+        {
+          "option": "Always",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Do you support or purchase products from companies that prioritize sustainability and environmentally-friendly practices?",
+      "options": [
+        {
+          "option": "Always - I always aim to purchase sustainably",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes - I try to but not consistently monitor purchases",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never - it does not come up in my decision making",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Do you turn off lights and electronics when you leave a room?",
+      "options": [
+        {
+          "option": "Always",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Do you use renewable energy sources such as solar or wind power?",
+      "options": [
+        {
+          "option": "Always",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "Rarely",
+          "value": 1
+        },
+        {
+          "option": "Never",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "How often do you use a reusable waterbottle?",
+      "options": [
+        {
+          "option": "Every day",
+          "value": -2
+        },
+        {
+          "option": "Most days, but sometimes I use bottled water",
+          "value": -1
+        },
+        {
+          "option": "Some days a week",
+          "value": 0
+        },
+        {
+          "option": "Not much, but I own one",
+          "value": 1
+        },
+        {
+          "option": "Never - I almost exclusively used bottled water",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "How often do you wear secondhand clothing?",
+      "options": [
+        {
+          "option": "All of the time",
+          "value": -2
+        },
+        {
+          "option": "Most of the time",
+          "value": -1
+        },
+        {
+          "option": "Sometimes",
+          "value": 0
+        },
+        {
+          "option": "I wear second-hand clothes but not frequently",
+          "value": 1
+        },
+        {
+          "option": "never",
+          "value": 2
+        }
+      ]
     }
   ]
-},
-{
-  "id": 21,
-  "question": "Do you support or purchase products from companies that prioritize sustainability and environmentally-friendly practices?",
-  "options": [
-    {
-      "option": "Always - I always aim to purchase sustainably",
-      "value": -2
-    },
-    {
-      "option": "Most of the time",
-      "value": -1
-    },
-    {
-      "option": "Sometimes - I try to but not consistently monitor purchases",
-      "value": 0
-    },
-    {
-      "option": "Rarely",
-      "value": 1
-    },
-    {
-      "option": "Never - it does not come up in my decision making",
-      "value": 2
-    }
-  ]
-},
-{
-  "id": 22,
-  "question": "Do you turn off lights and electronics when you leave a room?",
-  "options": [
-    {
-      "option": "Always",
-      "value": -2
-    },
-    {
-      "option": "Most of the time",
-      "value": -1
-    },
-    {
-      "option": "Sometimes",
-      "value": 0
-    },
-    {
-      "option": "Rarely",
-      "value": 1
-    },
-    {
-      "option": "Never",
-      "value": 2
-    }
-  ]
-},
-{
-  "id": 23,
-  "question": "Do you use renewable energy sources such as solar or wind power?",
-  "options": [
-    {
-      "option": "Always",
-      "value": -2
-    },
-    {
-      "option": "Most of the time",
-      "value": -1
-    },
-    {
-      "option": "Sometimes",
-      "value": 0
-    },
-    {
-      "option": "Rarely",
-      "value": 1
-    },
-    {
-      "option": "Never",
-      "value": 2
-    }
-  ]
-},
-{
-  "id": 24,
-  "question": "How often do you use a reusable waterbottle?",
-  "options": [
-    {
-      "option": "Every day",
-"value": -2
-},
-{
-"option": "Most days, but sometimes I use bottled water",
-"value": -1
-},
-{
-"option": "Some days a week",
-"value": 0
-},
-{
-"option": "Not much, but I own one",
-"value": 1
-},
-{
-"option": "Never - I almost exclusively used bottled water",
-"value": 2
-}
-]
-},
-{
-"id": 25,
-"question": "How often do you wear secondhand clothing?",
-"options": [
-{
-"option": "All of the time",
-"value": -2
-},
-{
-"option": "Most of the time",
-"value": -1
-},
-{
-"option": "Sometimes",
-"value": 0
-},
-{
-"option": "I wear second-hand clothes but not frequently",
-"value": 1
-},
-{
-"option": "never",
-"value": 2
-}
-]
-}
-]
 }
