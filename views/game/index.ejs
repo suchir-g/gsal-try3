@@ -1,3 +1,32 @@
 <%- include("../partials/html-head.ejs") %>
+  <div class="container-fluid d-flex justify-content-center align-items-center"
+    style="height:100vh; border:1px solid blue">
+    <div class="d-none d-lg-block col-2 h-100" style="border: 5px solid red">
 
-<%- include("../partials/html-foot.ejs") %>
+    </div>
+    <div class="col-8 h-100" style="border: 5px solid red">
+      <form action="/game/results">
+        <h3>HELLO GUYS PENGIUN</h3>
+        <div class="card p-2 m-2">
+          <h2>What is the first question?</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1_1" id="question1_1">
+            <label class="form-check-label" for="question1_1">
+              Option 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1_2" id="question1_2" checked>
+            <label class="form-check-label" for="question1_2">
+              Option 2
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg">Submit</button>
+      </form>
+    </div>
+    <div class="d-none d-lg-block col-2 h-100" style="border: 5px solid red">
+
+    </div>
+  </div>
+  <%- include("../partials/html-foot.ejs") %>
