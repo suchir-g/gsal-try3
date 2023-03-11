@@ -1,1 +1,54 @@
-{}
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What type of vehicle do you primarily use for transportation?",
+      "options": ["Car", "Public transport", "Bicycle", "Walk", "Motorcycle"]
+    },
+    {
+      "id": 2,
+      "question": "How often do you eat meat or animal products?",
+      "options": ["Every day", "Several times a week", "Once a week", "A few times a month", "Rarely or never"]
+    },
+    {
+      "id": 3,
+      "question": "How often do you use single-use plastics such as water bottles or straws?",
+      "options": ["Multiple times a day", "Once a day", "A few times a week", "A few times a month", "Rarely or never"]
+    },
+    {
+      "id": 4,
+      "question": "How often do you use energy-efficient appliances and light bulbs in your home?",
+      "options": ["All the time", "Most of the time", "Sometimes", "Rarely", "Never"]
+    },
+    {
+      "id": 5,
+      "question": "How often do you travel by airplane?",
+      "options": ["Multiple times a year", "Once a year", "A few times every few years", "Rarely", "Never"]
+    },
+    {
+      "id": 6,
+      "question": "How often do you recycle?",
+      "options": ["Every day", "Several times a week", "Once a week", "A few times a month", "Rarely or never"]
+    },
+    {
+      "id": 7,
+      "question": "How often do you use public transportation instead of driving?",
+      "options": ["All the time", "Most of the time", "Sometimes", "Rarely", "Never"]
+    },
+    {
+      "id": 8,
+      "question": "Do you have a vegetable garden or compost bin?",
+      "options": ["Yes, both", "Yes, one of them", "No, but I would like to", "No, I'm not interested", "No, I don't have the space"]
+    },
+    {
+      "id": 9,
+      "question": "How often do you buy new clothes?",
+      "options": ["Every week", "A few times a month", "Once a month", "A few times a year", "Rarely or never"]
+    },
+    {
+      "id": 10,
+      "question": "Do you use a reusable shopping bag?",
+      "options": ["Always", "Most of the time", "Sometimes", "Rarely", "Never"]
+    }
+  ]
+}
