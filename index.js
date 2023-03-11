@@ -16,7 +16,7 @@ app.set("views", path.join(__dirname, "views"));
 //getting the game data from the questions.json file
 const questionsData = require("./public/questions.json");
 
-const calculateScore = (choices) => 400 // DO THIS OALTER
+const calculateScore = (choices) => 400 // DO THIS OALTERsss
 
 app.get("/", (req, res) => {
   res.render("main-page");
