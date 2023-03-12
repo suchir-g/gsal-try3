@@ -16,9 +16,18 @@ app.set("views", path.join(__dirname, "views"));
 //getting the game data from the questions.json file
 const questionsData = require("./public/questions2.json");
 
-const calculateScore = (choices) => 400; // DO THIS OALTERsss
+const calculateScore = (choices) => {
+  score = 25;
+  // 1-> 2, 2 -> 1, 3 -> 0, 4 -> -1, 5 -> -2
+  for (let i of choices) {
+    score += 3 - i;
+  }
+  return score * 10;
+}; // DO THIS OALTERsss
 const calculateText = (score) => {
-  if (score < 200) {
+  if (score == 0) {
+    return "Dear User, <br><br>We have received your carbon score report, and it seems that your score is currently at 0.<br><br> We understand that this news may be alarming, but we want to emphasize that it's not too late to make a positive impact on the environment.It's important to understand that small changes can make a big difference. Perhaps you could start by reducing your energy usage, such as turning off lights and unplugging electronics when not in use. Additionally, consider reducing your meat consumption and opting for plant-based meals more often.<br><br>We encourage you to take immediate action to reduce your carbon footprint and make a positive impact on the environment. Every action counts, no matter how small. You need to change your actions now to make a difference.<br><br>With effort and dedication, we're confident that you can improve your score and be proud of the difference you're making. Let's work together towards a sustainable future.";
+  } else if (score < 200) {
     return "Dear User,<br><br>We have received your carbon score report, and it seems that your score is quite low. We understand that it can be disheartening to receive news like this, but we want to assure you that there are ways to improve your score and make a positive impact on the environment.<br><br>It's important to understand that small changes can make a big difference. Perhaps you could start by reducing your energy usage, such as turning off lights and unplugging electronics when not in use. Additionally, consider reducing your meat consumption and opting for plant-based meals more often.<br><br>We encourage you to continue taking steps to reduce your carbon footprint and make a positive impact on the environment. With a little effort, we're confident that you can improve your score and be proud of the difference you're making.";
   } else if (score < 400) {
     return "Dear User,<br><br>We're happy to report that your carbon score is improving! While there's still room for improvement, we're excited to see that you're taking steps to reduce your carbon footprint.<br><br>It's clear that you're making a conscious effort to be more environmentally friendly, such as reducing your energy usage and opting for public transportation or walking when possible. Keep up the great work!<br><br>We encourage you to continue finding ways to reduce your carbon footprint and make a positive impact on the environment. Your efforts are making a difference, and we hope to see your score continue to rise.";

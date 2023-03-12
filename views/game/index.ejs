@@ -1,14 +1,54 @@
 <%- include("../partials/html-head.ejs") %>
+  <style>
+    card {
+      width: fit-content;
+      margin: 1em;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    card:hover:not([name="final-submit-card"]) {
+      width: 110%;
+      margin: 0.75em;
+      border: 1px black solid;
+    }
+
+    img {
+      max-width: 100%;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      max-width: 105%;
+    }
+  </style>
   <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh">
-    <div class="d-none d-lg-block col h-100">
-      <img src="\images\PNG\4.png" alt="" style="max-width: 110%;">
-      <img src="\images\PNG\9.png" alt="" style="max-width: 110%;">
+    <div class="d-none d-lg-block col-2 h-100">
+      <div class="d-flex m-3">
+        <card class="card">
+          <img src="\images\animals\artic_fox.jpg" class="card-img-top" alt="arctic fox lmao ">
+          <div class="card-body">
+            <h5 class="card-title">Support the arctic foxes!</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </card>
+      </div>
+      <img src="\images\PNG\9.png" alt="">
     </div>
     <div class="col-md-8 col-sm-12 h-100">
       <form action="/game/results">
-        <h2 style="width: 100%; text-align: center;" class="m-3">CARBON SCORE CALCULATOR</h2>
+        <h1 style="width: 100%;" class="text-center my-3">CARBON SCORE CALCULATOR</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa hic temporibus natus labore cumque sint
+          sapiente, blanditiis facere reprehenderit nesciunt? Debitis nisi cum totam voluptatum error aliquam cupiditate
+          eum dolorem.
+          Possimus modi sequi ipsum itaque animi asperiores delectus ea repudiandae voluptas pariatur maiores et
+          recusandae at facilis inventore error esse explicabo aliquid illo iste necessitatibus, alias similique
+          laboriosam. Maxime, nulla.</p>
         <% for(const question of questionsData.questions) { %>
-          <div class="card p-2 m-2 questionCard" id="qc<%-question.id%>">
+          <card class="card p-2 m-2 questionCard my-3" id="qc<%-question.id%>" style="width:100%">
+            <i>Question <%-question.id%> / 25</i>
             <h4><%-question.question%></h4>
             <% for( let i=0; i < question.options.length; i++ ) { %>
               <div class="form-check">
@@ -20,12 +60,12 @@
               </div>
               <% } %>
 
-          </div>
+          </card>
 
           <% } %>
             <button class="btn btn-primary m-2 w-25 align-self-end" id="move-on">Next</button>
 
-            <card id="final-submit-card">
+            <card id="final-submit-card" name="final-submit-card">
               <h3>You have finished the test.</h3>
               <p>Click the button below to reveal your worked-out carbon score, ranging from 0 to 1000.</p>
               <p>The higher the score, the better your carbon footprint is, with 1000 being the best possible score.</p>
@@ -36,10 +76,25 @@
               <button class="btn btn-success btn-lg d-block m-2" id="final-submit-button">Submit</button>
             </card>
       </form>
+      <br><br><br><br><br>
+      <h2>Discover more</h2>
+
+
     </div>
-    <div class="d-none d-lg-block col h-100">
-      <img src="\images\PNG\3.png" alt="" style="max-width: 110%;">
-      <img src="\images\PNG\7.png" alt="" style="max-width: 110%;">
+    <div class="d-none d-lg-block col-2 h-100">
+      <img src="\images\PNG\3.png" alt="">
+      <div class="d-flex">
+        <card class="card">
+          <img src="\images\animals\elephant.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Donate to the Elephant Trust</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </card>
+      </div>
     </div>
   </div>
   <script>
@@ -84,4 +139,6 @@
 
 
   </script>
+
+
   <%- include("../partials/html-foot.ejs") %>
