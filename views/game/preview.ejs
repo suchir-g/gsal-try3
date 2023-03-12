@@ -4,6 +4,29 @@
       font-family: 'Single Day', cursive;
       font-size: max(250%, 5vw);
     }
+
+    #play-btn {
+      width: 8em;
+      height: 3em;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #006400;
+      text-decoration: none;
+      color: white;
+      font-size: x-large;
+      transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+        background-color 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-radius 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #play-btn:hover {
+      transform: scale(1.1);
+      background-color: #f9a620;
+      border-radius: 20px;
+      box-shadow: #ffd449 0 0 15px 2px;
+    }
   </style>
   <div id="main-content" class="container-fluid " style="height:100vh;">
     <div class="row">
@@ -31,7 +54,7 @@
           the
           planet!
         </p>
-        <a class="btn btn-lg btn-success" style="width: 6em; height: 3em;" href="/game/play">Start</a>
+        <a id="play-btn" href="/game/play">Play</a>
 
       </div>
     </div>

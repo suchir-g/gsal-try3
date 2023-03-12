@@ -1,0 +1,20 @@
+    card {
+      width: fit-content;
+      margin: 1em;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    card:hover:not([name="final-submit-card"]) {
+      width: 110%;
+      margin: 0.75em;
+      border: 1px black solid;
+    }
+
+    img {
+      max-width: 100%;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      max-width: 105%;
+    }

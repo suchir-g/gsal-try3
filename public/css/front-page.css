@@ -1,18 +1,18 @@
 h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 150%;
 }
 
 .display-1 {
   margin-top: 10%;
   font-size: min(9vmin, 10vh);
-  font-family: 'Single Day', cursive;
+  font-family: "Single Day", cursive;
 }
 
 #small-text {
   color: #2a9d8f;
-  transition: font-size 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), text-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
+  transition: font-size 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    text-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #big-text {
@@ -22,10 +22,12 @@ h1 {
 
 #small-text:hover {
   font-size: 90%;
+
 }
 
 #big-text:hover {
   font-size: 110%;
+
 }
 
 #plant-img {
@@ -35,4 +37,27 @@ h1 {
 
 #plant-img:hover {
   max-width: 102%;
+}
+
+#game-btn {
+  width: 8em;
+  height: 3em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5b8e7d;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
+    border-radius 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#game-btn:hover {
+  transform: scale(1.1);
+  background-color: #f4a259;
+  border-radius: 20px;
+  box-shadow: #fbb02d 0 0 15px 2px;
 }
