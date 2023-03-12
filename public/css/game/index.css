@@ -1,20 +1,35 @@
-    card {
-      width: fit-content;
-      margin: 1em;
-      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+card {
+  width: fit-content;
+  margin: 1em;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-    card:hover:not([name="final-submit-card"]) {
-      width: 110%;
-      margin: 0.75em;
-      border: 1px black solid;
-    }
+.questionCard {
+  background-color: #f8f0e5 !important;
+  border: 2px #605b56 solid;
+}
 
-    img {
-      max-width: 100%;
-      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+card:hover:not([name="final-submit-card"]) {
+  width: 110%;
+  margin: 0.75em;
+  border-color: black;
+}
 
-    img:hover {
-      max-width: 105%;
-    }
+img {
+  max-width: 100%;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+img:hover {
+  max-width: 105%;
+}
+
+.btn {
+  background-color: #70ae6e ;
+  border: 1px #70ae6e solid;
+}
+
+.btn:hover {
+  background-color: #6bbf59 ; 
+  border: 1px #70ae6e solid;
+}
