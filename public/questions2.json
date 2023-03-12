@@ -31,6 +31,10 @@
       "question": "How do you usually commute to work or school?",
       "options": [
         {
+          "option": "I work or study from home",
+          "value": -2
+        },
+        {
           "option": "I walk or bike",
           "value": -2
         },
@@ -45,10 +49,6 @@
         {
           "option": "I use a motorcycle or scooter",
           "value": 2
-        },
-        {
-          "option": "I work or study from home",
-          "value": -2
         }
       ]
     },

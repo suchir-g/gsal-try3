@@ -1,34 +1,42 @@
 <%- include("./partials/html-head.ejs") %>
-  <style>
-    #main-content {
-      background-color: white
-    }
-  </style>
-  <div id="main-content" class="container-fluid d-flex flex-row align-items-between justify-content-evenly p-5"
-    style="height:100vh;">
-    <div class="d-inline-block d-flex flex-column justify-content-evenly align-items-center m-3">
-      <h1>Hello!</h1>
-      <p class="text-center">
-        Climate change is a pressing issue that is affecting our planet in various ways, including rising temperatures,
-        more
-        extreme weather events, and loss of biodiversity. It is caused by human activities, such as burning fossil fuels
-        and
-        deforestation, which release greenhouse gases into the atmosphere.
-        <br>
-        <br>
-        To measure your impact on the environment and contribute to mitigating climate change, you can take a fun quiz
-        that
-        assesses your carbon footprint. This quiz will help you understand how your daily habits and lifestyle choices
-        affect
-        the environment and provide you with practical tips on how to reduce your carbon footprint. By taking steps to
-        reduce
-        your impact, you can help protect the planet and create a more sustainable future.
-      </p>
-      <a class="btn btn-lg btn-success" style="width: 6em; height: 3em;" href="/game">Play</a>
+  <link rel="stylesheet" href="css/front-page.css">
+  <div id="main-content" class="container-fluid px-lg-5 px-sm-3 py-3" style="height:100vh">
+    <div class="row" style="height:90%">
+      <div class="col d-inline-block d-flex flex-column justify-content-lg-evenly align-items-center"
+        style="height:100%">
+        <div style="width: 100%; height: max-content;" class="m-3 mx-auto d-block">
+          <h1 class="display-1 text-center "><span id="small-text">Small</span> Steps, <span id="big-text">Big</span>
+            Impact</h1>
+          <h1 class="text-center">Start Reducing Your Carbon Footprint</h1>
+        </div>
+        <p class="text-center p-lg-3 p-sm-1 d-block">
+          Climate change is a pressing issue that is affecting our planet in various ways, including rising
+          temperatures,
+          more
+          extreme weather events, and loss of biodiversity. It is caused by human activities, such as burning fossil
+          fuels
+          and
+          deforestation, which release greenhouse gases into the atmosphere.
+          <br>
+          <br>
+          To measure your impact on the environment and contribute to mitigating climate change, you can take a fun quiz
+          that
+          assesses your carbon footprint. This quiz will help you understand how your daily habits and lifestyle choices
+          affect
+          the environment and provide you with practical tips on how to reduce your carbon footprint. By taking steps to
+          reduce
+          your impact, you can help protect the planet and create a more sustainable future.
+        </p>
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center ">
+          <h4 class="w-100 text-center" style="font-family: 'Roboto Slab', serif; font-weight: 400;">Find out your carbon score below!</h4>
+          <br>
+          <a class="btn btn-lg btn-success text-center" style="width: 6em; height: 3em;" href="/game">Play</a>
+        </div>
 
-    </div>
-    <div class="d-none d-md-flex h-75 justify-content-center" style="width:fit-content">
-      <img src="\images\front-page-img.png" alt="" class="h-100">
+      </div>
+      <div class="col d-none d-md-flex justify-content-center align-items-center" style="height:100%">
+        <img src="\images\possible_front_page_img.webp" alt="" id="plant-img" style="">
+      </div>
     </div>
 
   </div>

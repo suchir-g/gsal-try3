@@ -39,6 +39,7 @@ const calculateText = (score) => {
     return "Dear User,<br><br>We're ecstatic to report that your carbon score is off the charts! Your commitment to environmental sustainability is awe-inspiring, and we're proud to see the impact you're making on the planet.<br><br>Your dedication to reducing energy usage, driving less, opting for sustainable products and practices, and sharing your knowledge with others is making a significant difference. You're truly a leader in environmental sustainability and an inspiration to all.<br><br>We encourage you to continue finding ways to reduce your carbon footprint and make a positive impact on the environment. Your efforts are making a significant difference, and we're excited to see the impact you'll continue to make in the future.<br><br>Thank you for being an environmental superhero! Keep up the outstanding work.";
   }
 };
+
 app.get("/", (req, res) => {
   res.render("main-page");
 });
@@ -50,6 +51,10 @@ app.get("/game", (req, res) => {
 app.get("/game/play", (req, res) => {
   res.render("game/index.ejs", { questionsData });
 });
+
+app.get("/test", (req,res) => {
+  res.render("cursor-test.ejs")
+})
 
 app.get("/game/results", (req, res) => {
   // console.log(req.query, typeof req.query);
