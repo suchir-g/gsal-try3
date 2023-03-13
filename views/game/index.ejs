@@ -1,9 +1,9 @@
 <%- include("../partials/html-head.ejs") %>
   <link rel="stylesheet" href="/css/game/index.css">
   <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh">
-    <div class="d-none d-lg-block col-2 h-100">
-      <div class="d-flex m-3">
-        <card class="card">
+    <div class="d-none d-lg-block col h-100" style="width: fit-content;">
+      <!-- <div class="d-flex m-3">
+        <card class="card m-2">
           <img src="\images\animals\artic_fox.jpg" class="card-img-top" alt="arctic fox lmao ">
           <div class="card-body">
             <h5 class="card-title">Support the arctic foxes!</h5>
@@ -13,10 +13,16 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </card>
-      </div>
+      </div> -->
       <img src="\images\PNG\9.png" alt="">
+      <img src="\images\PNG\8.png" alt="">
+      <img src="\images\PNG\1.png" alt="">
+      <img src="\images\PNG\2.png" alt="">
+      <img src="\images\PNG\3.png" alt="">
+      <img src="\images\PNG\4.png" alt="">
+      <img src="\images\PNG\5.png" alt="">
     </div>
-    <div class="col-md-8 col-sm-12 h-100">
+    <div class="col-md-10 col-sm-12 h-100 mx-auto">
       <form action="/game/results">
         <h1 style="width: 100%;" class="text-center my-3">CARBON SCORE CALCULATOR</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa hic temporibus natus labore cumque sint
@@ -26,7 +32,7 @@
           recusandae at facilis inventore error esse explicabo aliquid illo iste necessitatibus, alias similique
           laboriosam. Maxime, nulla.</p>
         <% for(const question of questionsData.questions) { %>
-          <card class="card p-2 m-2 questionCard my-3" id="qc<%-question.id%>" style="width:100%">
+          <card class="card p-2 m-2 questionCard my-3" id="qc<%-question.id%>" style="width:80%">
             <i>Question <%-question.id%> / 25</i>
             <h4><%-question.question%></h4>
             <% for( let i=0; i < question.options.length; i++ ) { %>
@@ -98,10 +104,16 @@
         change and reducing their impact on the environment.</p>
 
     </div>
-    <div class="d-none d-lg-block col-2 h-100">
+    <div class="d-none d-lg-block col h-100">
       <img src="\images\PNG\3.png" alt="">
-      <div class="d-flex">
-        <card class="card">
+      <img src="\images\PNG\4.png" alt="">
+      <img src="\images\PNG\5.png" alt="">
+      <img src="\images\PNG\6.png" alt="">
+      <img src="\images\PNG\7.png" alt="">
+      <img src="\images\PNG\8.png" alt="">
+      <img src="\images\PNG\9.png" alt="">
+      <!-- <div class="d-flex">
+        <card class="card m-3" style="width: fit-content;">
           <img src="\images\animals\elephant.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Donate to the Elephant Trust</h5>
@@ -111,7 +123,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </card>
-      </div>
+      </div> -->
     </div>
   </div>
   <script>

@@ -66,6 +66,10 @@ app.get("/game/results", (req, res) => {
   res.render("game/results.ejs", { score: score, text: text });
 });
 
+app.get("/about-us", (req, res) => {
+  res.render("about-us.ejs");
+});
+
 app.use((_, res) => {
   res.status(404).render("404");
 });
