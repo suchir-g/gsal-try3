@@ -52,9 +52,9 @@ app.get("/game/play", (req, res) => {
   res.render("game/index.ejs", { questionsData });
 });
 
-app.get("/test", (req,res) => {
-  res.render("cursor-test.ejs")
-})
+app.get("/test", (req, res) => {
+  res.render("cursor-test.ejs");
+});
 
 app.get("/game/results", (req, res) => {
   // console.log(req.query, typeof req.query);

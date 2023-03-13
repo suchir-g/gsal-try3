@@ -8,6 +8,9 @@ card {
   background-color: #f8f0e5 !important;
   border: 2px #605b56 solid;
 }
+.questionCard > h4 {
+  font-family: "Roboto Slab", serif;
+}
 
 card:hover:not([name="final-submit-card"]) {
   width: 110%;
@@ -25,11 +28,26 @@ img:hover {
 }
 
 .btn {
-  background-color: #70ae6e ;
+  background-color: #70ae6e;
   border: 1px #70ae6e solid;
 }
 
 .btn:hover {
-  background-color: #6bbf59 ; 
+  background-color: #6bbf59;
   border: 1px #70ae6e solid;
+}
+
+.btn:active {
+  background-color: #365430;
+  box-shadow: none;
+}
+.btn:focus {
+  background-color: #365430;
+  box-shadow: none;
+}
+
+
+h1 {
+  font-family: "Single Day", cursive;
+  font-size: 8vmin;
 }

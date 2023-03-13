@@ -1,52 +1,50 @@
-        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap");
+* {
+  cursor: none;
+}
+body {
+  background: #fffded;
+}
 
-        * {
-          cursor: none;
-        }
-        body {
-          background: #fFFDED;
-        }
+p {
+  transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-        p {
-          transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
+p:hover {
+  color: black;
+}
 
-        p:hover {
-          color: black;
-        }
+*::selection {
+  background-color: #3a5a40;
+  color: #fefae0;
+}
 
-        *::selection {
-          background-color: #3a5a40;
-          color: #fefae0;
-        }
+@media (hover: hover) {
+  div.cursors div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(51, 119, 56, 0.308);
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
 
-
-        @media (hover:hover) {
-        div.cursors div {
-            position: absolute;
-            top: 300px;
-            left: 300px;
-            width: 32px;
-            height: 32px;
-            background-color: rgba(51, 119, 56, 0.308);
-            border-radius: 50%;
-            z-index: 10000;
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-          }
-        
-          div.cursors #first-div {
-            position: absolute;
-            top: 300px;
-            left: 300px;
-            width: 3px;
-            height: 3px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 50%;
-            z-index: 10001;
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-        }
-
-        }
+  div.cursors #first-div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 3px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 10001;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+}

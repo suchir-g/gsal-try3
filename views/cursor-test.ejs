@@ -1,5 +1,26 @@
 <%- include("./partials/html-head.ejs") %>
-
+  <style>
+    #suchir {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      background-color: black;
+      color: orangered;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    #suchir:hover {
+      background-color: grey;
+      box-shadow: 1px 1px 5px 2px orange;
+      background-color: orangered;
+      color: black;
+      transform: scale(1.1);
+    }
+  </style>
   <h1>hiii!!!!</h1>
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium quibusdam deserunt animi quisquam, id
@@ -27,6 +48,11 @@
     exercitationem nemo fugit. Veritatis, praesentium odio nam voluptates quis quod soluta esse voluptatibus ipsam
     veniam.
     At, fugiat cupiditate.</p>
+  <p>this is a SECRET !!! no one can find. </p>
+  <p>im trying out <s>shit</s> stuff here (oops bad word) </p>
 
+  <a id="suchir" href="">
+    hello
+  </a>
 
   <%- include("./partials/html-foot.ejs") %>

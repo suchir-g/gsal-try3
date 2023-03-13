@@ -10,8 +10,9 @@ const randomNum = (min, max) =>
 balls.forEach((ball, index) => {
   let currX = 0;
   let currY = 0;
-  d = randomNum(0, 1) == 0 ? 1 : -1;
-  let speed = 0.25 + d * index * 0.007;
+  // d = randomNum(0, 1) == 0 ? 1 : -1;
+  // let speed = 0.25 + d * index * 0.007;
+  let speed = 0.25 + -1 * index * 0.007;
 
   const animate = () => {
     currX += (aimX - currX) * speed;
