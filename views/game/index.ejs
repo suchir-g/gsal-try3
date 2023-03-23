@@ -25,12 +25,18 @@
     <div class="col-md-10 col-sm-12 h-100 mx-auto">
       <form action="/game/results">
         <h1 style="width: 100%;" class="text-center my-3">CARBON SCORE CALCULATOR</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa hic temporibus natus labore cumque sint
-          sapiente, blanditiis facere reprehenderit nesciunt? Debitis nisi cum totam voluptatum error aliquam cupiditate
-          eum dolorem.
-          Possimus modi sequi ipsum itaque animi asperiores delectus ea repudiandae voluptas pariatur maiores et
-          recusandae at facilis inventore error esse explicabo aliquid illo iste necessitatibus, alias similique
-          laboriosam. Maxime, nulla.</p>
+        <p>Welcome to the Carbon Footprint Game!
+          In this game, you will be challenged to make choices that impact your carbon
+          footprint, and ultimately your health. As you progress through the game, you will be asked a series of
+          questions about
+          your daily habits and actions, and each answer will either increase or decrease your carbon footprint.
+          The aim
+          of the game is to reduce your carbon footprint and maintain a healthy lifestyle, while learning about the
+          impact
+          of your
+          actions on the environment. Get ready to make some tough choices and see how your daily actions affect
+          the
+          planet!</p>
         <% for(const question of questionsData.questions) { %>
           <card class="card p-2 m-2 questionCard my-3" id="qc<%-question.id%>" style="width:80%">
             <i>Question <%-question.id%> / 25</i>
@@ -61,7 +67,7 @@
               <button class="btn btn-success btn-lg d-block m-2" id="final-submit-button">Submit</button>
             </card>
       </form>
-      <br><br><br>
+
       <h2>About the test</h2>
       <p>The issue of climate change has become a pressing concern in the modern era, with the threat of rising
         temperatures and
