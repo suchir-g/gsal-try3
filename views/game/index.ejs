@@ -1,44 +1,19 @@
 <%- include("../partials/html-head.ejs") %>
   <link rel="stylesheet" href="/css/game/index.css">
   <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh">
-    <div class="d-none d-lg-block col h-100" style="width: fit-content;">
-      <!-- <div class="d-flex m-3">
-        <card class="card m-2">
-          <img src="\images\animals\artic_fox.jpg" class="card-img-top" alt="arctic fox lmao ">
-          <div class="card-body">
-            <h5 class="card-title">Support the arctic foxes!</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </card>
-      </div> -->
-      <img src="\images\PNG\9.png" alt="">
-      <img src="\images\PNG\8.png" alt="">
-      <img src="\images\PNG\1.png" alt="">
-      <img src="\images\PNG\2.png" alt="">
-      <img src="\images\PNG\3.png" alt="">
-      <img src="\images\PNG\4.png" alt="">
-      <img src="\images\PNG\5.png" alt="">
-    </div>
-    <div class="col-md-10 col-sm-12 h-100 mx-auto">
-      <form action="/game/results">
-        <h1 style="width: 100%;" class="text-center my-3">CARBON SCORE CALCULATOR</h1>
-        <p>Welcome to the Carbon Footprint Game!
-          In this game, you will be challenged to make choices that impact your carbon
-          footprint, and ultimately your health. As you progress through the game, you will be asked a series of
-          questions about
-          your daily habits and actions, and each answer will either increase or decrease your carbon footprint.
-          The aim
-          of the game is to reduce your carbon footprint and maintain a healthy lifestyle, while learning about the
-          impact
-          of your
-          actions on the environment. Get ready to make some tough choices and see how your daily actions affect
-          the
-          planet!</p>
+    <div class="col-md-8 col-sm-12 h-100">
+      <form action=" /game/results">
+        <h1 style="width: 100%;" class="text-center my-3 my-lg-4">CARBON SCORE CALCULATOR</h1>
+        <p>With 25 thought-provoking questions, this game allows you to calculate your carbon score out of 1000. By
+          answering
+          questions about your lifestyle and daily habits, you can gain insights into your carbon footprint and discover
+          ways to
+          reduce your impact on the environment. This interactive and engaging game is the perfect way to learn about
+          sustainability and take action towards a more sustainable future. Get ready to challenge yourself and see how
+          you can
+          make a difference!</p>
         <% for(const question of questionsData.questions) { %>
-          <card class="card p-2 m-2 questionCard my-3" id="qc<%-question.id%>" style="width:80%">
+          <card class="card p-2 m-2 questionCard my-3 mx-auto" id="qc<%-question.id%>" style="width:80%">
             <i>Question <%-question.id%> / 25</i>
             <h4><%-question.question%></h4>
             <% for( let i=0; i < question.options.length; i++ ) { %>
@@ -54,7 +29,7 @@
           </card>
 
           <% } %>
-            <button class="btn btn-primary m-2 w-25 align-self-end" id="move-on">Next</button>
+            <button class="btn btn-primary m-2 mx-auto w-75 align-self-end" id="move-on">Next</button>
 
             <card id="final-submit-card" name="final-submit-card">
               <h3>You have finished the test.</h3>
@@ -75,62 +50,53 @@
         greenhouse
         gas emissions, which are a leading cause of global warming. To tackle this issue, there has been a growing
         interest in
-        assessing individual carbon footprints, and a carbon footprint test can be an effective tool to achieve this.
+        assessing individual carbon footprints, and a carbon footprint test can be an effective tool to achieve
+        this.
       </p>
       <p>One such carbon footprint test is a comprehensive 25-question assessment that aims to provide an accurate
         measure of an
-        individual's carbon footprint. The questions in the test are designed to cover a wide range of areas, including
+        individual's carbon footprint. The questions in the test are designed to cover a wide range of areas,
+        including
         energy
-        consumption, transportation, food and diet, and waste disposal. Each question in the test is carefully crafted
+        consumption, transportation, food and diet, and waste disposal. Each question in the test is carefully
+        crafted
         to assess
-        the carbon footprint of a specific activity or behavior, and the answers provided by the test-taker are used to
+        the carbon footprint of a specific activity or behavior, and the answers provided by the test-taker are used
+        to
         calculate an overall score.</p>
       <p>The scoring system of this carbon footprint test is based on a scale of 1 to 1000, where a score of 1000 is
         indicative
-        of a minimal carbon footprint and a score of 0 is reflective of a very high carbon footprint. The questions in
+        of a minimal carbon footprint and a score of 0 is reflective of a very high carbon footprint. The questions
+        in
         the test
-        are weighted to reflect the relative importance of different activities in contributing to carbon emissions. For
+        are weighted to reflect the relative importance of different activities in contributing to carbon emissions.
+        For
         instance, questions on transportation may carry a higher weight than those on food consumption, given the
         significant
         impact of transportation on carbon emissions.</p>
-      <p>To take the test, individuals must answer each question honestly and accurately. The questions may require some
+      <p>To take the test, individuals must answer each question honestly and accurately. The questions may require
+        some
         research
         or reflection on the individual's habits and behaviors, and it is essential to answer them as truthfully as
         possible.
-        Once all questions are answered, the score is generated, and a comprehensive report is provided, outlining the
+        Once all questions are answered, the score is generated, and a comprehensive report is provided, outlining
+        the
         individual's carbon footprint, along with recommendations on how to reduce it.</p>
-      <p>In conclusion, the carbon footprint test is a complex and comprehensive assessment that provides an accurate
+      <p>In conclusion, the carbon footprint test is a complex and comprehensive assessment that provides an
+        accurate
         measure of
-        an individual's carbon footprint. With its sophisticated algorithm and careful weighting of questions, the test
+        an individual's carbon footprint. With its sophisticated algorithm and careful weighting of questions, the
+        test
         provides
         an insightful analysis of an individual's carbon footprint, along with practical recommendations on how to
         reduce it. By
-        taking the test and acting on its recommendations, individuals can play their part in addressing the issue of
+        taking the test and acting on its recommendations, individuals can play their part in addressing the issue
+        of
         climate
         change and reducing their impact on the environment.</p>
 
     </div>
-    <div class="d-none d-lg-block col h-100">
-      <img src="\images\PNG\3.png" alt="">
-      <img src="\images\PNG\4.png" alt="">
-      <img src="\images\PNG\5.png" alt="">
-      <img src="\images\PNG\6.png" alt="">
-      <img src="\images\PNG\7.png" alt="">
-      <img src="\images\PNG\8.png" alt="">
-      <img src="\images\PNG\9.png" alt="">
-      <!-- <div class="d-flex">
-        <card class="card m-3" style="width: fit-content;">
-          <img src="\images\animals\elephant.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Donate to the Elephant Trust</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </card>
-      </div> -->
-    </div>
+  </div>
   </div>
   <script>
     let currentQuestionIndex = 1

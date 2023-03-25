@@ -70,6 +70,10 @@ app.get("/about-us", (req, res) => {
   res.render("about-us.ejs");
 });
 
+app.get("/explore", (_, res) => {
+  res.render("explore.ejs")
+})
+
 app.use((_, res) => {
   res.status(404).render("404");
 });

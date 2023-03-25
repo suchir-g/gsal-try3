@@ -1,3 +1,14 @@
+body {
+  background: url("/images/thingy2.png");
+  background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: url("/images/bg.png");
+  }
+}
+
 card {
   width: fit-content;
   margin: 1em;
@@ -45,7 +56,6 @@ img:hover {
   background-color: #365430;
   box-shadow: none;
 }
-
 
 h1 {
   font-family: "Single Day", cursive;

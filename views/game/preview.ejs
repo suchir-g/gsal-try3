@@ -1,57 +1,32 @@
 <%- include("../partials/html-head.ejs") %>
-  <style>
-    h1 {
-      font-family: 'Single Day', cursive;
-      font-size: max(300%, 3vw);
-    }
-
-    #play-btn {
-      width: 8em;
-      height: 3em;
-      border-radius: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #006400;
-      text-decoration: none;
-      color: white;
-      font-size: x-large;
-      transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
-        background-color 0.1s cubic-bezier(0.165, 0.84, 0.44, 1),
-        border-radius 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    #play-btn:hover {
-      transform: scale(1.1);
-      background-color: #f9a620;
-      border-radius: 20px;
-      box-shadow: #ffd449 0 0 15px 2px;
-    }
-  </style>
-  <div id="main-content" class="container-fluid " style="height:100vh;">
-    <div class="row">
-      <div class="col d-none d-md-flex justify-content-center p-2">
-        <img src="\images\PNG\2.png" alt="" style="max-width: 80%; max-height:auto; width: auto;
-  height: auto;">
+  <link rel="stylesheet" href="/css/game/preview.css">
+  <div id="main-content" class="container-fluid " style="height:100%">
+    <div class="row" style="height: 90%">
+      <div class="col d-none d-md-flex justify-content-center p-2 ">
+        <img src="\images\woman-earth.png" alt="" style="        max-width: 100%; height: auto; object-fit: contain;">
       </div>
       <div class=" col d-inline-block d-flex flex-column justify-content-evenly align-items-center m-3">
-        <h1 class="text-center">Carbon Footprint Game</h1>
-        <p>
-          Welcome to the Carbon Footprint Game!
-          <br><br> In this game, you will be challenged to make choices that impact your carbon
-          footprint, and ultimately your health.<br><br> As you progress through the game, you will be asked a series of
-          questions about
-          your daily habits and actions, and each answer will either increase or decrease your carbon footprint.<br>
-          <br>The aim
-          of the game is to reduce your carbon footprint and maintain a healthy lifestyle, while learning about the
-          impact
-          of your
-          actions on the environment. <br><br>Get ready to make some tough choices and see how your daily actions affect
-          the
-          planet!
-        </p>
-        <a id="play-btn" href="/game/play">Play</a>
+        <h1 class="text-center" style="font-size: 10vmin;">Carbon Footprint Game</h1>
+        <div class="d-flex flex-column align-items-center mt-0">
+          <p>
+            Welcome to the Carbon Footprint Game!
+            <br><br> In this game, you will be challenged to make choices that impact your carbon
+            footprint, and ultimately your health.<br><br> As you progress through the game, you will be asked a series
+            of
+            questions about
+            your daily habits and actions, and each answer will either increase or decrease your carbon footprint.<br>
+            <br>The aim
+            of the game is to reduce your carbon footprint and maintain a healthy lifestyle, while learning about the
+            impact
+            of your
+            actions on the environment. <br><br>Get ready to make some tough choices and see how your daily actions
+            affect
+            the
+            planet!
+          </p>
+          <a id="play-btn" href="/game/play" class="mt-2">Play</a>
 
+        </div>
       </div>
     </div>
 

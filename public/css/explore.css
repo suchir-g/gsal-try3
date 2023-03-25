@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+*::selection {
+  background-color: darkcyan;
+  color: aliceblue;
+}
+a {
+  font-family: "Roboto Slab", serif;
+}
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 10vmin;
+  color: aliceblue;
+}
+
+.carousel-item > div > p,
+.carousel-item a {
+  color: white;
+  font-size: large;
+  font-family: "Space Mono", monospace;
+  text-shadow: black 1px 1px 1px;
+}
+
+.carousel-item {
+  height: 80svh;
+  border-bottom: rgb(79, 79, 79) solid 5px;
+}
+
+.carousel-item a {
+  text-decoration: none;
+  color: #f4a261;
+  text-shadow: none;
+  transition: font-size 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-shadow: 0 0 15px #f4a261;
+}
+
+.carousel-item a:hover {
+  font-size: 110%;
+  color: #f4a261;
+}
+
+.c-special-text {
+  text-shadow: white 0 0 15px;
+}
+
+#ci1 {
+  background: url("/images/carousel/waves2.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+#ci2 {
+  background: url("/images/carousel/treesfile.avif");
+  background-size: cover;
+  background-position: center;
+}
+#ci3 {
+  background: url("/images/carousel/skyes.avif");
+  background-size: cover;
+  background-position: center;
+}
+#ci4 {
+  background: url("/images/carousel/corals.avif");
+  background-size: cover;
+  background-position: center;
+}
+#ci5 {
+  background: url("/images/carousel/snowleopard.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+#further-learning {
+  height: fit-content;
+  width: 100svw;
+  background-color: aliceblue;
+}
+
+h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+
+#further-learning p {
+  width: 75vw;
+}
